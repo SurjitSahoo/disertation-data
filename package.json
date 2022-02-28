@@ -1,0 +1,32 @@
+{
+  "name": "disertation-data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "converter.js",
+  "scripts": {
+    "clean": "rimraf build",
+    "convert": "node converter.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BarsaSahoo/disertation-data.git"
+  },
+  "keywords": [
+    "nursing",
+    "desertation-data",
+    "qualitative",
+    "research"
+  ],
+  "author": "Barsarani Sahoo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BarsaSahoo/disertation-data/issues"
+  },
+  "homepage": "https://github.com/BarsaSahoo/disertation-data#readme",
+  "dependencies": {
+    "@asciidoctor/core": "^2.2.6",
+    "@asciidoctor/docbook-converter": "^2.0.0",
+    "node-pandoc": "^0.3.0",
+    "rimraf": "^3.0.2"
+  }
+}
