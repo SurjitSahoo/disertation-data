@@ -11,5 +11,6 @@
   output is saved in `build/` directory
 
 ```sh
-	npm run convert
+	npm install   # only for the first time
+	npm run convert  # whenever you want to convert
 ```
