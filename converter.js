@@ -36,16 +36,6 @@ function convert() {
 	} catch (dirReadErr) {
 		throw dirReadErr;
 	}
-
-	// const hh = asciiDoctor.convert(fs.readFileSync('item1.adoc', 'utf8'), { backend: 'docbook5' });
-
-	// const pandocArgs = '--from docbook --to docx --output build/item1.docx'
-	// pandoc(hh, pandocArgs, (err, result) => {
-	// 	if (err) {
-	// 		console.log(err);
-	// 	}
-	// 	return result;
-	// });
 }
 
 convert();
