@@ -5,7 +5,7 @@ const fs = require('fs');
 
 docbookConverter.register();
 
-const SOURCE_DIR = './';
+const SOURCE_DIR = './content/';
 
 function pandocCallback(err, result, file) {
 	if (err) {
@@ -20,7 +20,7 @@ function convert() {
 			if (file.endsWith('.adoc')) {
 				try {
 					// read the file
-					const content = fs.readFileSync(file, 'utf8');
+					const content = fs.readFileSync(SOURCE_DIR + file, 'utf8');
 					// convert to docbook
 					const docbook = asciiDoctor.convert(content, { backend: 'docbook5' });
 					// check if the build directory exists, if not create the directory
